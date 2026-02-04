@@ -3,7 +3,7 @@ function Footer (){
 
         
         <a className="footer" href="https://github.com/mariapujolpol/life-abroad" >
-            GitHub Repository
+            <p>GitHub Repository</p>
         </a>
     )
 }

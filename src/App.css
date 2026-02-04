@@ -15,7 +15,7 @@ html, body {
   flex-direction: column;
 }
 
-.logo {
+/*.logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -26,7 +26,7 @@ html, body {
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
+}*/
 
 @keyframes logo-spin {
   from {
@@ -71,20 +71,39 @@ html, body {
 .navbar {
   height: 64px;
   flex-shrink: 0;
-  color: #000;
+  
 
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically */
+  gap: 18px;                 /* space between logo and text */
+  padding: 8px 0;
+  background-color: #a8bd9c;  
+  
 }
+
+
+
 
 .footer {
   height: 48px;
-  flex-shrink: 0;
+  flex-shrink: 0; 
+  background-color:#a8bd9c ;
 
+}
+
+.footer p {
+  margin: 0; /*Removinf the default margin*/
+  padding: 14px 0; /* Vertically center the text */
+  text-align: center; 
+  color: black;
 }
 
 .sidebar {
   width: 200px;
   flex-shrink: 0;
-  background-color: black;
+  background-color: #06351e;;
+  color: black
 
 }
 
@@ -110,6 +129,8 @@ html, body {
   color: black;
   height: 100%;
   flex: 1;
+  position: center;
+  background-color: #86ad9a;
   
 }
 /*.footer {
@@ -162,3 +183,6 @@ html, body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+
+
