@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "date": "2026-01-21",
+    "title": "Spanish restaurants in Berlin",
+    "mood": "happy",
+    "link": "https://www.tripadvisor.com/Restaurants-g187323-c36-Berlin.html"
+  },
+  {
+    "id": 2,
+    "date": "2026-01-22",
+    "title": "Visit Brandenburg Gate",
+    "mood": "excited",
+    "link": "https://en.wikipedia.org/wiki/Brandenburg_Gate"
+  },
+  {
+    "id": 3,
+    "date": "2026-01-23",
+    "title": "Learn basic German phrases",
+    "mood": "motivated",
+    "link": "https://www.duolingo.com"
+  },
+  {
+    "id": 4,
+    "date": "2026-01-24",
+    "title": "Walk around Alexanderplatz",
+    "mood": "curious",
+    "link": "https://en.wikipedia.org/wiki/Alexanderplatz"
+  },
+  {
+    "id": 5,
+    "date": "2026-01-25",
+    "title": "Gym workout session",
+    "mood": "energetic",
+    "link": "https://www.fitnessblender.com"
+  },
+  {
+    "id": 6,
+    "date": "2026-01-26",
+    "title": "Cooking pasta night",
+    "mood": "relaxed",
+    "link": "https://www.bbcgoodfood.com/recipes/collection/pasta-recipes"
+  },
+  {
+    "id": 7,
+    "date": "2026-01-27",
+    "title": "Portfolio coding day",
+    "mood": "focused",
+    "link": "https://github.com"
+  },
+  {
+    "id": 8,
+    "date": "2026-01-28",
+    "title": "Movie night",
+    "mood": "chill",
+    "link": "https://www.netflix.com"
+  },
+  {
+    "id": 9,
+    "date": "2026-01-29",
+    "title": "Visit museum",
+    "mood": "inspired",
+    "link": "https://www.smb.museum"
+  },
+  {
+    "id": 10,
+    "date": "2026-01-30",
+    "title": "Meet friends for coffee",
+    "mood": "social",
+    "link": "https://www.starbucks.com"
+  },
+  {
+    "id": 11,
+    "date": "2026-01-31",
+    "title": "React practice",
+    "mood": "productive",
+    "link": "https://react.dev"
+  },
+  {
+    "id": 12,
+    "date": "2026-02-01",
+    "title": "Go for a run",
+    "mood": "fresh",
+    "link": "https://www.nike.com/running"
+  },
+  {
+    "id": 13,
+    "date": "2026-02-02",
+    "title": "Read a book",
+    "mood": "calm",
+    "link": "https://www.goodreads.com"
+  },
+  {
+    "id": 14,
+    "date": "2026-02-03",
+    "title": "Study JavaScript",
+    "mood": "determined",
+    "link": "https://developer.mozilla.org"
+  },
+  {
+    "id": 15,
+    "date": "2026-02-04",
+    "title": "Bike ride",
+    "mood": "free",
+    "link": "https://www.strava.com"
+  },
+  {
+    "id": 16,
+    "date": "2026-02-05",
+    "title": "Photography walk",
+    "mood": "creative",
+    "link": "https://unsplash.com"
+  },
+  {
+    "id": 17,
+    "date": "2026-02-06",
+    "title": "Watch tutorial videos",
+    "mood": "learning",
+    "link": "https://www.youtube.com"
+  },
+  {
+    "id": 18,
+    "date": "2026-02-07",
+    "title": "Clean apartment",
+    "mood": "organized",
+    "link": "https://www.cleanipedia.com"
+  },
+  {
+    "id": 19,
+    "date": "2026-02-08",
+    "title": "Grocery shopping",
+    "mood": "neutral",
+    "link": "https://www.lidl.com"
+  },
+  {
+    "id": 20,
+    "date": "2026-02-09",
+    "title": "Yoga session",
+    "mood": "peaceful",
+    "link": "https://www.yogawithadriene.com"
+  },
+  {
+    "id": 21,
+    "date": "2026-02-10",
+    "title": "Update CV",
+    "mood": "ambitious",
+    "link": "https://www.canva.com/resumes"
+  },
+  {
+    "id": 22,
+    "date": "2026-02-11",
+    "title": "Networking online",
+    "mood": "hopeful",
+    "link": "https://www.linkedin.com"
+  },
+  {
+    "id": 23,
+    "date": "2026-02-12",
+    "title": "Try new recipe",
+    "mood": "hungry",
+    "link": "https://www.tasty.co"
+  },
+  {
+    "id": 24,
+    "date": "2026-02-13",
+    "title": "Language exchange",
+    "mood": "engaged",
+    "link": "https://www.tandem.net"
+  },
+  {
+    "id": 25,
+    "date": "2026-02-14",
+    "title": "Valentine dinner",
+    "mood": "romantic",
+    "link": "https://www.opentable.com"
+  },
+  {
+    "id": 26,
+    "date": "2026-02-15",
+    "title": "Debug project",
+    "mood": "frustrated",
+    "link": "https://stackoverflow.com"
+  },
+  {
+    "id": 27,
+    "date": "2026-02-16",
+    "title": "Music playlist update",
+    "mood": "fun",
+    "link": "https://spotify.com"
+  },
+  {
+    "id": 28,
+    "date": "2026-02-17",
+    "title": "Plan weekend trip",
+    "mood": "adventurous",
+    "link": "https://www.booking.com"
+  },
+  {
+    "id": 29,
+    "date": "2026-02-18",
+    "title": "Meditation",
+    "mood": "balanced",
+    "link": "https://headspace.com"
+  },
+  {
+    "id": 30,
+    "date": "2026-02-19",
+    "title": "Review goals",
+    "mood": "reflective",
+    "link": "https://notion.so"
+  }
+]
