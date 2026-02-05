@@ -15,18 +15,6 @@ html, body {
   flex-direction: column;
 }
 
-/*.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}*/
 
 @keyframes logo-spin {
   from {
@@ -51,23 +39,6 @@ html, body {
   color: #888;
 }
 
-/*:root {
-  --navbar-height: 64px;
-  --footer-height: 48px;
-}*/
-
-/*.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: var(--navbar-height);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 100px;
-}*/
 .navbar {
   height: 64px;
   flex-shrink: 0;
@@ -78,7 +49,12 @@ html, body {
   align-items: center;       /* center vertically */
   gap: 18px;                 /* space between logo and text */
   padding: 8px 0;
-  background-color: #a8bd9c;  
+  background: linear-gradient(
+    to bottom,
+    #3B8C85,
+    #2F6F6A
+  );
+  color: #F4F7F6; 
   
 }
 
@@ -88,7 +64,12 @@ html, body {
 .footer {
   height: 48px;
   flex-shrink: 0; 
-  background-color:#a8bd9c ;
+  background: linear-gradient(
+    to bottom,
+    #3B8C85,
+    #2F6F6A
+  );
+  color: #F4F7F6;
 
 }
 
@@ -101,10 +82,13 @@ html, body {
 
 .sidebar {
   width: 200px;
-  flex-shrink: 0;
-  background-color: #06351e;;
-  color: black
-
+  background: linear-gradient(
+    to bottom,
+    #6F9F8F,
+    #5C8E7E
+  );
+  color: black;
+  text-align: center;
 }
 
 
@@ -131,58 +115,7 @@ html, body {
   flex: 1;
   position: center;
   background-color: #86ad9a;
-  
-}
-/*.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  flex-direction: column;
   width: 100%;
-  height: var(--footer-height);
-  z-index: 1000;
-  text-align: center;
 }
-
-.sidebar {
-  position: fixed;
-  top: var(--navbar-height);
-  left: 0;
-  width: 20%;
-  height: calc(100vh - var(--navbar-height) - var(--footer-height));
-  overflow: auto;
-  background-color: red;
-  
-}
-
-.main-content {
-  margin-top: var(--navbar-height);
-  margin-bottom: var(--footer-height);
-  margin-left: 20%;
-  height: calc(100vh - var(--navbar-height) - var(--footer-height));
-  overflow: auto;
-  background-color: #1a1a1a;
-  color: #ffffff;
-  width: 80%;
-
-  overflow-y: auto;
-}*/
-
-
-.table {
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
-  margin: 0;
-  
-}
-
-.table th,
-.table td {
-  padding: 8px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-
 

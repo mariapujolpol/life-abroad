@@ -1,10 +1,13 @@
-import Footer from "./assets/components/Footer"
-import Navbar from "./assets/components/Navbar"
-import Sidebar from "./assets/components/Sidebar"
+import Footer from "./components/Footer"
+import Navbar from "./components/Navbar"
+import Sidebar from "./components/Sidebar"
 import "./App.css"
-import MainContent from "./assets/components/MainContent"
+import MainContent from "./components/MainContent"
 
-
+import AboutPage from "./pages/AboutPage"
+import JournalDetails from "./pages/JournalDetails"
+import NotFoundPage from "./pages/NotFoundPage"
+import { Routes, Route, Link } from "react-router-dom"
 
 
 
@@ -15,14 +18,21 @@ function App() {
     <div className= "container">
       
         
-      
     
        <Navbar></Navbar>
      
 
      <div className="center-body">
       <Sidebar></Sidebar>
-      <MainContent></MainContent>
+      
+      <Routes>
+        <Route path="/" element={<MainContent />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/journal-details/:journalId" element={<JournalDetails />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+      
+      
 
 
      </div>

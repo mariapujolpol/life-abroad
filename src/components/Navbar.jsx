@@ -1,5 +1,5 @@
-import logo from "../img/relovatelogof.png"
-import name from "../img/relovatetitle.png"
+import logo from "../assets/img/relovatelogof.png"
+import name from "../assets/img/relovatetitle.png"
 function Navbar(){
     return(
         <div className="navbar">
