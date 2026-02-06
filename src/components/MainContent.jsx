@@ -1,16 +1,16 @@
 import { useState } from "react";
-import journalData from "../assets/journalData.json";
 import JournalCard from "./JournalCard";
 import { Link } from "react-router-dom";
+import AddJournalForm from "./AddJournalForm";
 
 //console.log(journalData);
 
-function MainContent(){
+function MainContent(props){
 
    
-    const [journalList, setJournalList] = useState ( journalData)  
+   
     const deleteJournal = (journalId ) => { 
-        setJournalList( (previousJournalList) => {
+        props.setJournalList( (previousJournalList) => {
             return previousJournalList.filter( (journal) => journal.id !== journalId )
         } )
     }
@@ -18,7 +18,10 @@ function MainContent(){
     const lineStyle = { height: "1px", backgroundColor: "black", margin: "10px 0", border: "none" }
     
     return (
-        <div className="main-content">
+        <div className="main-content" style={{ display: "flex", flexDirection: "column"}}>
+            <div style={{textAlign:"center", display: "flex", justifyContent: "center"}}> 
+                <AddJournalForm setJournalList={props.setJournalList}></AddJournalForm>
+            </div>
             <div style={{ display: "flex", fontWeight: "bold", background: "linear-gradient(to bottom, #92c2c4, #075d64)" }}>
                 <span style={componentStyle}>Date</span>
                 <span style={componentStyle}>Title</span>
@@ -28,7 +31,7 @@ function MainContent(){
             </div>
             <br />
             <div>
-                { journalList.map( (journal) => {
+                { props.journalData.map( (journal) => {
                     return ( 
                         <Link to={`/journal-details/${journal.id}`}key={journal.id}><JournalCard  journal={journal} deleteJournal={deleteJournal}></JournalCard></Link>
                     )    

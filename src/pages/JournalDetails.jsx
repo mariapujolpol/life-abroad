@@ -1,13 +1,15 @@
 import { use } from "react";
-import journalData from "../assets/journalData.json";
+
 import { Link, useParams } from "react-router-dom";
 
-function JournalDetails() {
+function JournalDetails(props) {
 
-    const selecedJournal = journalData.find((journal) => journal.id.toString() ===useParams().journalId);
+    console.log(props.journalData);
+    const selecedJournal = props.journalData.find((journal) => journal.id.toString() ===useParams().journalId);
     console.log(useParams());
     return (
         <div style={{backgroundColor: "#86ad9a", width:"100%", padding: "20px", display: "flex", flexDirection: "column", alignItems: "center"}}>
+            
             <div style={{display: "flex", gap: "10px", alignItems: "center"}}>
                 <h1>{selecedJournal.title}</h1>
                 <p>{selecedJournal.date}</p>

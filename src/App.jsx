@@ -8,10 +8,13 @@ import AboutPage from "./pages/AboutPage"
 import JournalDetails from "./pages/JournalDetails"
 import NotFoundPage from "./pages/NotFoundPage"
 import { Routes, Route, Link } from "react-router-dom"
-
+import journalData from "./assets/journalData.json"
+import { useState } from "react"
 
 
 function App() {
+  const [journalList, setJournalList] = useState ( journalData)
+  
   
 
   return (
@@ -26,10 +29,11 @@ function App() {
       <Sidebar></Sidebar>
       
       <Routes>
-        <Route path="/" element={<MainContent />} />
+        <Route path="/" element={<MainContent journalData={journalList} setJournalList={setJournalList} />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/journal-details/:journalId" element={<JournalDetails />} />
+        <Route path="/journal-details/:journalId" element={<JournalDetails journalData={journalList} />} />
         <Route path="*" element={<NotFoundPage />} />
+  
       </Routes>
       
       
