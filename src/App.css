@@ -119,3 +119,11 @@ html, body {
   width: 100%;
 }
 
+button {
+  text-align:"center";
+  padding: "20px";
+  background: "linear-gradient(to bottom, #92c2c4, #075d64)";
+  color: "black";
+  width: "200px";
+  border-radius: "10px"
+}
