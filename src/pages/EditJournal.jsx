@@ -63,32 +63,35 @@ function EditJournal(props) {
 
     }
 
-    const formInputStyle = { display: "flex", gap: "10px" }
+    const formInputStyle = { display: "flex", gap: "10px", height: "50px" }
+    const labelStyle = {display: "flex", justifyContent: "center", alignItems: "center"}
     const formSectionStyle = { display: "flex", gap: "100px", justifyContent: "space-between" }
     return (
 
-        <form 
+        <div style={{width: "100%", backgroundColor: "#86ad9a", display: "flex", justifyContent: "center", alignItems: "start", paddingTop: "50px"}}>
+            <form 
         onSubmit={handleOnSubmit} 
         style={{ 
             display: "flex", flexDirection: "column", gap: "20px", 
-            width: "100%", padding: "20px", backgroundColor: "#86ad9a"
+            width: "60%", padding: "20px", backgroundColor: "#86ad9a",
+            borderStyle: "solid", borderWidth: "1px", borderRadius: "10px",
         }}>
-            <h2>
+            <h2 style={{textAlign: "center"}}>
                 Journal Entry
             </h2>
             <div style={formSectionStyle}>
                 <div style={formInputStyle}>
-                    <label>Title</label>
+                    <label style={labelStyle}>Title</label>
                     <input type="text" name="title" value={title} onChange={handleOnChange} />
 
                 </div>
                 <div style={formInputStyle}>
-                    <label>Date</label>
+                    <label style={labelStyle}>Date</label>
                     <input type="date" name="date" value={date} onChange={handleOnChange} />
                 </div>
             </div>
             <div style={formInputStyle}>
-                <label>Description</label>
+                <label style={labelStyle}>Description</label>
 
                 <textarea style={{ flex: "1" }}
                     rows={4}
@@ -99,7 +102,7 @@ function EditJournal(props) {
 
             <div style={formSectionStyle}>
                 <div style={formInputStyle}>
-                    <label>Mood</label>
+                    <label style={labelStyle}>Mood</label>
                     <select name="mood" value={mood} onChange={handleOnChange}>
                         <option value="happy">😊 Happy</option>
                         <option value="sad">😢 Sad</option>
@@ -108,7 +111,7 @@ function EditJournal(props) {
 
                 </div>
                 <div style={formInputStyle}>
-                    <label>Reason</label>
+                    <label style={labelStyle}>Reason</label>
                     <input type="text" name="reason" value={reason} onChange={handleOnChange} />
                 </div>
 
@@ -120,27 +123,25 @@ function EditJournal(props) {
             </div>
             <div style={formSectionStyle}>
                 <div style={formInputStyle}>
-                    <label>Link</label>
+                    <label style={labelStyle}>Link</label>
                     <input type="text" name="link" value={link} onChange={handleOnChange} />
                 </div>
-                <div>
-                    <label>Image</label>
+                <div style={formInputStyle}>
+                    <label style={labelStyle}>Image</label>
                     <input type="text" name="image" value={image} onChange={handleOnChange} />
                 </div>
             </div>
 
-
-
-        <button type="submit" style={{ textAlign:"center", padding: "20px", background: "linear-gradient(to bottom, #92c2c4, #075d64)",
+        <div style={{display: "flex", justifyContent: "center", gap: "20px"}}>
+            <button type="submit" style={{ textAlign:"center", padding: "20px", background: "linear-gradient(to bottom, #92c2c4, #075d64)",
                            color: "black", width: "200px", borderRadius: "10px" }}  >Save Journal</button>
-        <Link to={`/journal-details/${selecedJournal.id}`} key={selecedJournal.id}><button type="button" style={{ textAlign:"center", padding: "20px", background: "linear-gradient(to bottom, #92c2c4, #075d64)",
+            <Link to={`/journal-details/${selecedJournal.id}`} key={selecedJournal.id}><button type="button" style={{ textAlign:"center", padding: "20px", background: "linear-gradient(to bottom, #92c2c4, #075d64)",
                            color: "black", width: "200px", borderRadius: "10px" }}  >Back Button</button>
             </Link>
-
-
-            {/* <Link to={`/journal-details/${selecedJournal.id}`} key={selecedJournal.id}><button type="submit" style={{ width: "200px", textAlign: "center" }} >Save Journal</button>
-            </Link> */}
+        </div>
         </form>
+        </div>
+        
     )
 }
 
