@@ -10,16 +10,19 @@ import NotFoundPage from "./pages/NotFoundPage"
 import { Routes, Route, Link } from "react-router-dom"
 import journalData from "./assets/journalData.json"
 import { useState } from "react"
-
+import JournalEdit from "./pages/EditJournal"
 
 function App() {
   const [journalList, setJournalList] = useState ( journalData)
+
+ 
   
   
 
   return (
     <div className= "container">
-      
+
+    
         
     
        <Navbar></Navbar>
@@ -33,6 +36,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/journal-details/:journalId" element={<JournalDetails journalData={journalList} />} />
         <Route path="*" element={<NotFoundPage />} />
+        <Route path="/journal-edit/:journalId" element={<JournalEdit journalData={journalList} setJournalList={setJournalList} />} />
   
       </Routes>
       

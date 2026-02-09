@@ -7,6 +7,7 @@ import AddJournalForm from "./AddJournalForm";
 
 function MainContent(props){
 
+    
    
    
     const deleteJournal = (journalId ) => { 
@@ -18,7 +19,9 @@ function MainContent(props){
     const lineStyle = { height: "1px", backgroundColor: "black", margin: "10px 0", border: "none" }
     
     return (
-        <div className="main-content" style={{ display: "flex", flexDirection: "column"}}>
+        <div className="main-content" style={{ display: "flex", flexDirection: "column", position: "relative", zIndex: 1001}}>
+            
+
             <div style={{textAlign:"center", display: "flex", justifyContent: "center"}}> 
                 <AddJournalForm setJournalList={props.setJournalList}></AddJournalForm>
             </div>

@@ -36,6 +36,14 @@ function JournalDetails(props) {
             >
                 Back to Journal
             </Link>
+            <Link
+                style={{ textAlign:"center", padding: "20px", background: "linear-gradient(to bottom, #92c2c4, #075d64)",
+                           color: "black", width: "200px", borderRadius: "10px" }} 
+                to={`/journal-edit/${selecedJournal.id}`}>
+            
+                Edit Journal
+            </Link>
+            
         </div>  
     )
 
