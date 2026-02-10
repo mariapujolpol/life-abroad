@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+{/*import '../styles/form.css'; {/* Importing CSS for styling the form */}
+
 function AddJournalForm(props) {
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
@@ -62,72 +64,90 @@ function AddJournalForm(props) {
 
     }
 
-    const formInputStyle = { display: "flex", gap: "10px"  }    
-    const formSectionStyle = {display: "flex", gap: "100px", justifyContent: "space-between" }
     return (
-        
-        <form onSubmit={handleOnSubmit} style={{ display: "flex", flexDirection: "column", gap: "20px", width: "40%", padding: "20px", borderRadius: "10px" }}>
-            <h2>
-                Journal Entry
-        </h2>
-        <div style={formSectionStyle}>
-            <div style={formInputStyle}>
-            <label>Title</label>
-            <input type="text" name="title" value={title} onChange={handleOnChange} />
-
+        <form onSubmit={handleOnSubmit} className="journal-form">
+            <h2 className="form-title">Journal Entry</h2>
+            <div className="form-section">
+                <div className="form-field">
+                    <label>Title</label>
+                    <input
+                        className="form-input"
+                        type="text"
+                        name="title"
+                        value={title}
+                        onChange={handleOnChange}
+                    />
+                </div>
+                <div className="form-field">
+                    <label>Date</label>
+                    <input
+                        className="form-input"
+                        type="date"
+                        name="date"
+                        value={date}
+                        onChange={handleOnChange}
+                    />
+                </div>
             </div>
-            <div style={formInputStyle}>
-             <label>Date</label>
-            <input type="date" name="date" value={date} onChange={handleOnChange} />
+            <div className="form-field form-field--full">
+                <label>Description</label>
+                <textarea
+                    className="form-input form-textarea"
+                    rows={4}
+                    placeholder="Write your journal entry..."
+                    name="description"
+                    value={description}
+                    onChange={handleOnChange}
+                />
             </div>
-        </div>
-        <div style={formInputStyle}>
-            <label>Description</label>
-            
-            <textarea style={{flex: "1"}}
-            rows={4}
-             placeholder="Write your journal entry..."
-             name="description" value={description} onChange={handleOnChange}
-/>
-        </div>
-            
-            <div style={formSectionStyle}>
-                <div style={formInputStyle}>
+            <div className="form-section">
+                <div className="form-field">
                     <label>Mood</label>
-                <select name="mood" value={mood} onChange={handleOnChange}>
-                    <option value="happy">😊 Happy</option>
-                    <option value="sad">😢 Sad</option>
-                    <option value="angry">😠 Angry</option>
-                </select>
-
+                    <select
+                        className="form-input"
+                        name="mood"
+                        value={mood}
+                        onChange={handleOnChange}
+                    >
+                        <option value="happy">😊 Happy</option>
+                        <option value="sad">😢 Sad</option>
+                        <option value="angry">😠 Angry</option>
+                    </select>
                 </div>
-                    <div style={formInputStyle}>
-                 <label>Reason</label>
-                <input type="text" name="reason" value={reason} onChange={handleOnChange} />
-                    </div>
-
-
-                
-
-                
-
+                <div className="form-field">
+                    <label>Reason</label>
+                    <input
+                        className="form-input"
+                        type="text"
+                        name="reason"
+                        value={reason}
+                        onChange={handleOnChange}
+                    />
+                </div>
             </div>
-            <div style={formSectionStyle}>
-                <div style={formInputStyle}>
-                   <label>Link</label>
-            <input type="text" name="link" value={link} onChange={handleOnChange} /> 
+            <div className="form-section">
+                <div className="form-field">
+                    <label>Link</label>
+                    <input
+                        className="form-input"
+                        type="text"
+                        name="link"
+                        value={link}
+                        onChange={handleOnChange}
+                    />
                 </div>
-                <div>
+                <div className="form-field">
                     <label>Image</label>
-            <input type="text" name="image" value={image} onChange={handleOnChange} />
-                    </div>
+                    <input
+                        className="form-input"
+                        type="text"
+                        name="image"
+                        value={image}
+                        onChange={handleOnChange}
+                    />
+                </div>
             </div>
-
-            
-
-            
-
-            <button type="submit" style={{width: "200px", textAlign: "center"}}>Add Journal</button>
+            <button type="submit" className="primary-button">Add Journal</button>
         </form>
     )
 }

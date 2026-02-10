@@ -11,5 +11,166 @@
     },
     "link": "https://www.tripadvisor.com/Restaurants-g187323-c36-Berlin.html",
     "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+  },
+  {
+    "id": 2,
+    "date": "2026-02-13",
+    "title": "Bad customer service",
+    "description": "Had an unpleasant experience with customer service today.",
+    "mood": {
+      "emoji": "😡",
+      "text": "angry",
+      "reason": "Not being listened to felt unfair."
+    },
+    "link": "https://www.trustpilot.com",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+  },
+  {
+    "id": 3,
+    "date": "2026-01-22",
+    "title": "Visit Brandenburg Gate",
+    "description": "Visited the iconic Brandenburg Gate and felt a sense of awe experiencing such a historic place in my new home.",
+    "mood": {
+      "emoji": "😊",
+      "text": "happy",
+      "reason": "Exploring famous landmarks makes living abroad feel rewarding."
+    },
+    "link": "https://en.wikipedia.org/wiki/Brandenburg_Gate",
+    "image": "https://images.unsplash.com/photo-1548786817-5f3f3c9a1a4b"
+  },
+  {
+    "id": 4,
+    "date": "2026-01-23",
+    "title": "Learn basic German phrases",
+    "description": "Practiced basic German phrases to feel more confident handling everyday conversations.",
+    "mood": {
+      "emoji": "😡",
+      "text": "angry",
+      "reason": "Struggling with pronunciation and mistakes felt frustrating."
+    },
+    "link": "https://www.duolingo.com",
+    "image": "https://images.unsplash.com/photo-1529070538774-1843cb3265df"
+  },
+  {
+    "id": 5,
+    "date": "2026-01-24",
+    "title": "Walk around Alexanderplatz",
+    "description": "Took a long walk around Alexanderplatz, observing the rhythm of daily life in the city.",
+    "mood": {
+      "emoji": "😢",
+      "text": "sad",
+      "reason": "Being surrounded by unfamiliar places made me feel lonely."
+    },
+    "link": "https://en.wikipedia.org/wiki/Alexanderplatz",
+    "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047"
+  },
+  {
+    "id": 6,
+    "date": "2026-01-25",
+    "title": "Gym workout session",
+    "description": "Went to the gym to release stress and keep a healthy routine while adapting to life abroad.",
+    "mood": {
+      "emoji": "😊",
+      "text": "happy",
+      "reason": "Exercise helped release tension and boost my mood."
+    },
+    "link": "https://www.fitnessblender.com",
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b"
+  },
+  {
+    "id": 7,
+    "date": "2026-01-26",
+    "title": "Cooking pasta night",
+    "description": "Cooked pasta at home, enjoying a quiet night and practicing simple comfort cooking.",
+    "mood": {
+      "emoji": "😢",
+      "text": "sad",
+      "reason": "Cooking alone made the evening feel lonely."
+    },
+    "link": "https://www.bbcgoodfood.com/recipes/collection/pasta-recipes",
+    "image": "https://images.unsplash.com/photo-1521389508051-d7ffb5dc8bbf"
+  },
+  {
+    "id": 9,
+    "date": "2026-01-27",
+    "title": "Portfolio coding day",
+    "description": "Spent the day coding and improving my portfolio to support future career goals.",
+    "mood": {
+      "emoji": "😡",
+      "text": "angry",
+      "reason": "Debugging issues took much longer than expected."
+    },
+    "link": "https://github.com",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97"
+  },
+  {
+    "id": 10,
+    "date": "2026-01-28",
+    "title": "Movie night",
+    "description": "Stayed in for a cozy movie night to recharge socially and mentally.",
+    "mood": {
+      "emoji": "😢",
+      "text": "sad",
+      "reason": "Staying in made me feel isolated."
+    },
+    "link": "https://www.netflix.com",
+    "image": "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0"
+  },
+    {
+    "id": 11,
+    "date": "2026-02-14",
+    "title": "Rejected application",
+    "description": "Received another rejection email after a job application.",
+    "mood": {
+      "emoji": "😡",
+      "text": "angry",
+      "reason": "The process felt exhausting and discouraging."
+    },
+    "link": "https://www.linkedin.com",
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+  },
+  {
+    "id": 12,
+    "date": "2026-01-29",
+    "title": "Visit museum",
+    "description": "Visited a museum and enjoyed learning about local history and culture.",
+    "mood": {
+      "emoji": "😊",
+      "text": "happy",
+      "reason": "Learning new things lifted my spirits."
+    },
+    "link": "https://www.smb.museum",
+    "image": "https://images.unsplash.com/photo-1529429617124-95b109e86bb8"
+  },
+  {
+    "id": 13,
+    "date": "2026-01-30",
+    "title": "Meet friends for coffee",
+    "description": "Met friends for coffee and enjoyed meaningful conversations.",
+    "mood": {
+      "emoji": "😊",
+      "text": "happy",
+      "reason": "Spending time with friends felt comforting."
+    },
+    "link": "https://www.starbucks.com",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93"
+  },
+
+  
+
+  {
+    "id": 14,
+    "date": "2026-02-12",
+    "title": "Missed deadline",
+    "description": "Realized I missed an important deadline and felt overwhelmed.",
+    "mood": {
+      "emoji": "😡",
+      "text": "angry",
+      "reason": "Feeling disappointed in myself caused frustration."
+    },
+    "link": "https://www.todoist.com",
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4"
   }
+  
+
 ]
