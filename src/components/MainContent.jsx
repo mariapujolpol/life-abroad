@@ -17,9 +17,18 @@ function MainContent(props){
         } )
 
     }
-    const filteredJournals = props.journalData.filter(journal => 
-        journal.title.toLowerCase().includes(searchTerm.toLowerCase())
+ 
+    const [mood, setMood] = useState("");
+
+    const handleOnChange = (event) => {
+        setMood(event.target.value);
+        console.log(mood);
+    };
+       const filteredJournals = props.journalData.filter(journal => 
+        journal.title.toLowerCase().includes(searchTerm.toLowerCase()) &&
+        (mood === "" || journal.mood.emoji === mood)
     );
+
     return (
         <div className="main-content" style={{ display: "flex", flexDirection: "column", position: "relative", zIndex: 1001}}>
             
@@ -34,7 +43,19 @@ function MainContent(props){
                 <span className="journal-header-cell">Delete</span>
             </div>
             <br />
-            <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}></SearchBar>
+            <div className="search-filter-row">
+                <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}></SearchBar>
+                <div className="filter-group">
+                    <label className="filter-label">Filter by mood</label>
+                    <select className="filter-select" name="mood" value={mood} onChange={handleOnChange}>
+                        <option value="">All</option>
+                        <option value="😊">😊 Happy</option>
+                        <option value="😢">😢 Sad</option>
+                        <option value="😡">😡 Angry</option>
+                    </select>
+                </div>
+            </div>
+            
             <br />
              {(filteredJournals.length === 0 ? <p style={{textAlign: "center"}}>No journals found.</p> :
             

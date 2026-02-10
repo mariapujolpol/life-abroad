@@ -356,6 +356,54 @@ html, body {
   cursor: pointer;
 }
 
+.search-filter-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.search-filter-row .search-bar {
+  flex: 1 1 320px;
+  align-self: stretch;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 200px;
+  padding: 18px 22px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e6e9ef;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+}
+
+.filter-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.filter-select {
+  background: #f1f4f8;
+  border: 1px solid #d6dbe4;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  color: #0f172a;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #0f172a;
+  box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.15);
+  background-color: #ffffff;
+}
+
 .search-bar {
   width: min(640px, 92%);
   align-self: center;
