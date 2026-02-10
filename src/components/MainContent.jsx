@@ -4,27 +4,22 @@ import { Link } from "react-router-dom";
 import AddJournalForm from "./AddJournalForm";
 import SearchBar from "./SearchBar";
 
-//console.log(journalData);
 
 function MainContent(props){
 
-    
-   const [searchTerm, setSearchTerm] = useState("");
-   
+    const [searchTerm, setSearchTerm] = useState("");
     const deleteJournal = (journalId ) => { 
         props.setJournalList( (previousJournalList) => {
             return previousJournalList.filter( (journal) => journal.id !== journalId )
         } )
 
     }
- 
     const [mood, setMood] = useState("");
-
     const handleOnChange = (event) => {
         setMood(event.target.value);
         console.log(mood);
     };
-       const filteredJournals = props.journalData.filter(journal => 
+    const filteredJournals = props.journalData.filter(journal => 
         journal.title.toLowerCase().includes(searchTerm.toLowerCase()) &&
         (mood === "" || journal.mood.emoji === mood)
     );
@@ -57,21 +52,15 @@ function MainContent(props){
             </div>
             
             <br />
-             {(filteredJournals.length === 0 ? <p style={{textAlign: "center"}}>No journals found.</p> :
-            
-                 <div className="journal-list">
+            {(filteredJournals.length === 0 ? <p style={{textAlign: "center"}}>No journals found.</p> :
+                <div className="journal-list">
                 { filteredJournals.map( (journal) => {
                     return ( 
                         <Link className="journal-link" to={`/journal-details/${journal.id}`}key={journal.id}><JournalCard  journal={journal} deleteJournal={deleteJournal}></JournalCard></Link>
                     )    
-                } )}
-            </div>
-                )
-                
-            }
-            
-        
-          
+                })}
+                </div>
+            )}
         </div>   
     )
 

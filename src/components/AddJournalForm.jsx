@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 {/*import '../styles/form.css'; {/* Importing CSS for styling the form */}
 
 function AddJournalForm(props) {
+
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [date, setDate] = useState('');
@@ -30,9 +31,6 @@ function AddJournalForm(props) {
         } else if (event.target.name === 'image') {
             setImage(event.target.value);
         }
-
-        
-
     }
 
     const handleOnSubmit = (event) => {
@@ -48,7 +46,6 @@ function AddJournalForm(props) {
             reason,
             link,
             image
-            
         }
         props.setJournalList((previousJournalList) => {
             return [...previousJournalList, newJournal];

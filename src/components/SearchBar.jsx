@@ -4,7 +4,6 @@ function SearchBar({searchTerm, setSearchTerm}) {
         <div className="search-bar">
             <h2>Search Journal</h2>
             <input
-                
                 type="text"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
