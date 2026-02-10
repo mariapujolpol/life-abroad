@@ -21,8 +21,21 @@ function EditJournal(props) {
             setDate(event.target.value);
         } else if (event.target.name === 'mood') {
             setMood(event.target.value);
-        } else if (event.target.name === 'text') {
-            setText(event.target.value);
+            if (event.target.value === "😊") {
+                setText("Happy");
+               
+                
+            } else if (event.target.value === "😢") {
+                setText("Sad");
+               
+                 
+
+            } else if (event.target.value === "😡") {
+                setText("Angry");
+                
+                
+            }
+        
         } else if (event.target.name === 'reason') {
             setReason(event.target.value);
         } else if (event.target.name === 'link') {
@@ -104,9 +117,9 @@ function EditJournal(props) {
                 <div style={formInputStyle}>
                     <label style={labelStyle}>Mood</label>
                     <select name="mood" value={mood} onChange={handleOnChange}>
-                        <option value="happy">😊 Happy</option>
-                        <option value="sad">😢 Sad</option>
-                        <option value="angry">😠 Angry</option>
+                        <option value="😊">😊 Happy</option>
+                        <option value="😢">😢 Sad</option>
+                        <option value="😡">😡 Angry</option>
                     </select>
 
                 </div>
