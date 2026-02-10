@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Sidebar(){
     const linkStyle = {color: "black", textAlign: "center"}
     return (
-       <div className="sidebar">
+       <div className="sidebar sidebar-expanded">
             <Link to="/">
                 <p>Journal</p>
             </Link>

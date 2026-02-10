@@ -74,18 +74,81 @@ html, body {
 }
 
 .sidebar {
-  width: 200px;
+  width: 220px;
   background: linear-gradient(120deg, #0f766e, #1e3a8a);
   color: #ffffff;
-  text-align: center;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 10px 0 18px rgba(15, 118, 110, 0.2);
-  padding: 20px 16px;
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: width 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.sidebar a:hover {
+  background-color: rgba(248, 250, 252, 0.16);
+  transform: translateX(2px);
+}
+
+.sidebar a::before {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.sidebar a:nth-of-type(1)::before {
+  content: "📔";
+}
+
+.sidebar a:nth-of-type(2)::before {
+  content: "ℹ️";
 }
 
 .sidebar p {
-  color: white;
+  margin: 0;
+  color: inherit;
+  white-space: nowrap;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
+
+.sidebar-expanded {
+  width: 220px;
+}
+
+.sidebar-collapsed {
+  width: 72px;
+}
+
+.sidebar-collapsed a {
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.sidebar-collapsed p {
+  opacity: 0;
+  transform: translateX(-8px);
+  pointer-events: none;
+}
+
 
 
 .container {
@@ -255,6 +318,43 @@ html, body {
 
 .journal-card-delete {
   cursor: pointer;
+}
+
+.search-bar {
+  width: min(640px, 92%);
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 22px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e6e9ef;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+}
+
+.search-bar h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+.search-bar input {
+  background: #f1f4f8;
+  border: 1px solid #d6dbe4;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  color: #0f172a;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #0f172a;
+  box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.15);
+  background-color: #ffffff;
 }
 
 .about-page {
