@@ -14,6 +14,7 @@ import JournalEdit from "./pages/EditJournal"
 
 function App() {
   const [journalList, setJournalList] = useState ( journalData)
+  const [isOpen, setIsOpen] = useState(true);
 
  
   
@@ -25,11 +26,11 @@ function App() {
     
         
     
-       <Navbar></Navbar>
+       <Navbar setIsOpen={setIsOpen}></Navbar>
      
 
      <div className="center-body">
-      <Sidebar></Sidebar>
+      <Sidebar isOpen={isOpen} ></Sidebar>
       
       <Routes>
         <Route path="/" element={<MainContent journalData={journalList} setJournalList={setJournalList} />} />
